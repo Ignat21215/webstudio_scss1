@@ -108,12 +108,17 @@
 @media (max-width: 480px) {
   .advertisements {
 
+    &__item {
+      flex-basis: 100%;
+    }
+
     &__image {
-      max-width: 450px;
+      width: 100%;
+      height: 100%;
     }
 
     &-overlay__wrapper {
-      max-width: 450px;
+      width: 450px;
     }
   }
 }
