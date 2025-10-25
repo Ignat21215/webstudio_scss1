@@ -113,14 +113,6 @@
   &__sm-list {
     display: none;
   }
-
-  &__burger-label {
-    display: none;
-  }
-
-  &__burger-input {
-    display: none;
-  }
 }
 
 @media (max-width: 768px) {
@@ -163,89 +155,12 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-    &__nav-list {
+    &__nav {
       display: none;
     }
 
     &__list {
       display: none;
-    }
-
-    input {
-      display: none;
-    }
-
-    label {
-      display: block;
-      width: 30px;
-      margin-left: auto;
-      top: 15px;
-      position: relative;
-      height: 100vh;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      & span {
-        display: block;
-        width: 25px;
-        height: 2px;
-        background-color: $span-color;
-        position: absolute;
-        right: 0;
-        transition: 0.5s;
-
-        &::before {
-          content: "";
-          display: block;
-          width: 25px;
-          height: 2px;
-          background: $span-color;
-          position: absolute;
-          right: 0;
-          transition: 0.3s;
-          top: -8px;
-        }
-
-        &::after {
-          content: "";
-          display: block;
-          width: 25px;
-          height: 2px;
-          background: $span-color;
-          position: absolute;
-          right: 0;
-          transition: 0.3s;
-          top: 8px;
-        }
-      }
-    }
-
-    input[type="checkbox"]:checked ~ &__nav-list {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    input[type="checkbox"]:checked ~ label span {
-      transform: rotate(-45deg);
-    }
-    input[type="checkbox"]:checked ~ label span::before {
-      top: 0;
-      transform: rotate(0);
-    }
-    input[type="checkbox"]:checked ~ label span::after {
-      top: 0;
-      transform: rotate(90deg);
-    }
-
-    input[type="checkbox"]:checked ~ &__list {
-      display: block;
-    }
-
-    input[type="checkbox"]:checked ~ &__sm-list {
-      display: block;
     }
   }
 }
