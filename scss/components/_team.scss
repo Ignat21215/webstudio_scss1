@@ -26,11 +26,6 @@
     border-bottom-left-radius: 4px;
   }
 
-  &__img {
-    width: 270px;
-    height: 260px;
-  }
-
   &__desc {
     @include txt($font-size: 16px, $line-height: 1em);
     padding-bottom: 16px;
@@ -80,11 +75,6 @@
     &__list {
       flex-wrap: wrap;
     }
-
-    &__img {
-     max-width: 354px;
-     max-height: 374px;
-    }
   }
 }
 
@@ -93,10 +83,6 @@
 
     &__list {
       justify-content: center;
-    }
-
-    &__item {
-max-width: 450px;
     }
   }
 }

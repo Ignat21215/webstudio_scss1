@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
   <title>WebStudio</title>
   <link href="./css/main.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./fonts/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
@@ -48,7 +47,7 @@
         </li>
       </ul>
       <input type="checkbox" id="toggle">
-      <label for="toggle">
+      <label for="toggle" class="menu__label">
         <span class="toggle-btn"></span>
       </label>
       <nav class="nav">
@@ -195,7 +194,12 @@
         <h2 class="title title--team" data-aos="zoom-out-up">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item" data-aos="zoom-in-right">
-              <img class="team__img" srcset="./images/main-page/ihor@1x.jpg, ./images/main-page/ihor@2x.jpg" src="./images/main-page/igor.jpg" alt="Ігор" />
+                <picture>
+                  <source srcset="./images/main-page/ihor.jpg, ./images/main-page/ihor@2x.jpg" media="(min-width: 769px)">
+                  <source srcset="./images/main-page/ihor-tablet.jpg, ./images/main-page/ihor-tablet@2x.jpg" media="(min-width: 481px)">
+                  <source srcset="./images/main-page/ihor-mobile.jpg, ./images/main-page/ihor-mobile@2x.jpg" media="(max-width: 480px)">
+                  <img class="team__img" src="./images/main-page/ihor.jpg" alt="Ігор" />
+                </picture>
             <h4 class="team__title">Ігор Дем'яненко</h4>
             <p class="team__desc">Product Designer</p>
             <ul class="team__sm">
@@ -214,7 +218,12 @@
             </ul>
           </li>
           <li class="team__item" data-aos="zoom-in-right">
-            <img class="team__img" srcset="./images/main-page/olha@1x.jpg, ./images/main-page/olha@2x.jpg" src="./images/main-page/olha.jpg" alt="Ольга" />
+            <picture>
+              <source srcset="./images/main-page/olha.jpg, ./images/main-page/olha@2x.jpg" media="(min-width: 769px)">
+              <source srcset="./images/main-page/olha-tablet.jpg, ./images/main-page/olha-tablet@2x.jpg" media="(min-width: 481px)">
+              <source srcset="./images/main-page/olha-mobile.jpg, ./images/main-page/olha-mobile@2x.jpg" media="(max-width: 480px)">
+              <img class="team__img" src="./images/main-page/olha.jpg" alt="Ольга" />
+            </picture>
             <h4 class="team__title">Ольга Рєпіна</h4>
             <p class="team__desc">Frontend Developer</p>
             <ul class="team__sm">
@@ -233,7 +242,12 @@
             </ul>
           </li>
           <li class="team__item" data-aos="zoom-in-left">
-            <img class="team__img" srcset="./images/main-page/mykola@1x.jpg, ./images/main-page/mykola@2x.jpg" src="./images/main-page/mykola.jpg" alt="Микола" />
+            <picture>
+              <source srcset="./images/main-page/mykola.jpg, ./images/main-page/mykola@2x.jpg" media="(min-width: 769px)">
+              <source srcset="./images/main-page/mykola-tablet.jpg, ./images/main-page/mykola-tablet@2x.jpg" media="(min-width: 481px)">
+              <source srcset="./images/main-page/mykola-mobile.jpg, ./images/main-page/mykola-mobile@2x.jpg" media="(max-width: 480px)">
+              <img class="team__img" src="./images/main-page/mykola.jpg" alt="Микола" />
+            </picture>
             <h4 class="team__title">Микола Тарасов</h4>
             <p class="team__desc">Marketing</p>
             <ul class="team__sm">
@@ -252,7 +266,12 @@
             </ul>
           </li>
           <li class="team__item" data-aos="zoom-in-left">
-            <img class="team__img" srcset="./images/main-page/mykhailo@1x.jpg, ./images/main-page/mykhailo@2x.jpg" alt="Михайло" src="./images/main-page/mykhailo.jpg"/>
+            <picture>
+              <source srcset="./images/main-page/mykhailo.jpg, ./images/main-page/mykhailo@2x.jpg" media="(min-width: 769px)">
+              <source srcset="./images/main-page/mykhailo-tablet.jpg, ./images/main-page/mykhailo-tablet@2x.jpg" media="(min-width: 481px)">
+              <source srcset="./images/main-page/mykhailo-mobile.jpg, ./images/main-page/mykhailo-mobile@2x.jpg" media="(max-width: 480px)">
+              <img class="team__img" alt="Михайло" src="./images/main-page/mykhailo.jpg"/>
+            </picture>
             <h4 class="team__title">Михайло Єрмаков</h4>
             <p class="team__desc">UI Designer</p>
             <ul class="team__sm">
