@@ -12,6 +12,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -33,28 +34,31 @@
   background-color: $light-txt-color;
   transform: translate(-50%, -50%) scale(1);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
-  border-radius: 16px;
+  border-radius: 4px;
 
   &__close-btn {
     position: absolute;
-    bottom: 543px;
-    left: 490px;
+    top: 8px;
+    right: 8px;
     background-color: rgba(0, 0, 0, 0);
     padding: 6px;
     border-radius: 100%;
     border: 1px solid;
     border-color: rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    display: flex;
+    justify-content: center;
   }
 
-  // &__close-icon {
-  //   width: 18px;
-  //   height: 18px;
-  //   fill: rgba(0, 0, 0, 1);
+  &__close-icon {
+    width: 18px;
+    height: 18px;
+    fill: rgba(0, 0, 0, 1);
 
-  //   &:hover {
-  //     fill: $main-color;
-  //   }
-  // }
+    &:hover {
+      fill: $main-color;
+    }
+  }
 
   &__title {
     @extend %titles;
@@ -73,25 +77,44 @@
 
   &__label {
     display: flex;
+    position: relative;
     flex-direction: column;
     gap: 4px;
     color: $desc-color;
     text-align: left;
     font-size: 12px;
     letter-spacing: 0.01em;
+
+    &:hover .modal__icon {
+      fill: $main-color;
+    }
   }
 
   &__input {
-    position: relative;
     border: 1px solid;
-    border-color: rgba(33, 33, 33, 0.2);
+    border-color: $burger-link-border;
     border-radius: 4px;
     height: 40px;
-    padding-left: 10px;
+    padding-left: 42px;
+    padding-right: 10px;
 
     &:hover {
       border-color: $main-color;
     }
+
+    &:focus {
+      border-color: $main-color;
+      outline: none;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    fill: $titles-color;
+    bottom: 12px;
+    left: 12px;
   }
 
   &__textarea {
@@ -107,6 +130,15 @@
       color: rgba(117, 117, 117, 0.5);
       letter-spacing: 0.01em;
       font-size: 12px;
+    }
+
+    &:focus {
+      border-color: $main-color;
+      outline: none;
+    }
+
+    &:hover {
+      border-color: $main-color;
     }
   }
 

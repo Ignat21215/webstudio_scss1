@@ -86,20 +86,23 @@
         <button type="button" class="hero__button" data-modal-open data-aos="zoom-out-up">Замовити послугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <button class="modal__close-btn" type="button" data-modal-close></button>
+            <button class="modal__close-btn" type="button" data-modal-close><svg class="modal__close-icon"><use href="./images/symbol-defs.svg#icon-close"></use></svg></button>
             <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="modal__form">
               <label class="modal__label">
                 Ім'я
-                <input type="text" class="modal__input man">
+                <input type="text" class="modal__input">
+                <svg class="modal__icon"><use href="./images/symbol-defs.svg#icon-name"></use></svg>
               </label>
               <label class="modal__label">
                 Телефон
-                <input type="tel" class="modal__input phone">
+                <input type="tel" class="modal__input">
+                <svg class="modal__icon"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
               </label>
               <label class="modal__label">
                 Пошта
-                <input class="modal__input email" type="email">
+                <input class="modal__input" type="email">
+                <svg class="modal__icon"><use href="./images/symbol-defs.svg#icon-e-mail"></use></svg>
               </label>
               <label class="modal__label">
                 Коментар

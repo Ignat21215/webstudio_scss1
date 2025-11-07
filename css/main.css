@@ -477,6 +477,7 @@ ul {
   opacity: 1;
   -webkit-transition: opacity 2.5s cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -500,17 +501,32 @@ ul {
           transform: translate(-50%, -50%) scale(1);
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
           box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
-  border-radius: 16px;
+  border-radius: 4px;
 }
 .modal__close-btn {
   position: absolute;
-  bottom: 543px;
-  left: 490px;
+  top: 8px;
+  right: 8px;
   background-color: rgba(0, 0, 0, 0);
   padding: 6px;
   border-radius: 100%;
   border: 1px solid;
   border-color: rgba(0, 0, 0, 0.1);
+  padding: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.modal__close-icon {
+  width: 18px;
+  height: 18px;
+  fill: rgb(0, 0, 0);
+}
+.modal__close-icon:hover {
+  fill: rgb(33, 150, 243);
 }
 .modal__title {
   font-size: 20px;
@@ -533,6 +549,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -543,16 +560,31 @@ ul {
   font-size: 12px;
   letter-spacing: 0.01em;
 }
+.modal__label:hover .modal__icon {
+  fill: rgb(33, 150, 243);
+}
 .modal__input {
-  position: relative;
   border: 1px solid;
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  padding-left: 10px;
+  padding-left: 42px;
+  padding-right: 10px;
 }
 .modal__input:hover {
   border-color: rgb(33, 150, 243);
+}
+.modal__input:focus {
+  border-color: rgb(33, 150, 243);
+  outline: none;
+}
+.modal__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: rgb(33, 33, 33);
+  bottom: 12px;
+  left: 12px;
 }
 .modal__textarea {
   border: 1px solid;
@@ -587,6 +619,13 @@ ul {
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01em;
   font-size: 12px;
+}
+.modal__textarea:focus {
+  border-color: rgb(33, 150, 243);
+  outline: none;
+}
+.modal__textarea:hover {
+  border-color: rgb(33, 150, 243);
 }
 .modal__wrapper {
   display: -webkit-box;
