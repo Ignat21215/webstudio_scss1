@@ -888,7 +888,12 @@ ul {
 .team__sm-link {
   padding: 12px;
   border-radius: 100%;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .team__sm-link:hover {
   background-color: rgb(33, 150, 243);
@@ -1033,7 +1038,12 @@ ul {
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer__list-link:hover {
   background-color: rgb(33, 150, 243);

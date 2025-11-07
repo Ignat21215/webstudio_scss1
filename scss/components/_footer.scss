@@ -1,7 +1,7 @@
 @use "../utils/variables" as *;
 @use "../utils/placeholders" as *;
 @use "../utils/mixins" as *;
-@use '../utils/fonts' as*;
+@use "../utils/fonts" as *;
 
 .footer {
   background-color: $footer-background;
@@ -53,7 +53,8 @@
       padding: 12px;
       background-color: rgba(255, 255, 255, 0.1);
       border-radius: 100%;
-      display: block;
+      display: flex;
+      justify-content: center;
 
       &:hover {
         background-color: $main-color;
@@ -139,7 +140,6 @@
 
 @media (max-width: 768px) {
   .footer {
-
     &__address-wrapper {
       text-align: center;
     }
@@ -155,18 +155,17 @@
     }
 
     &__list {
-
       &-title {
         text-align: center;
       }
     }
 
     &__form {
-     display: inline-block;
+      display: inline-block;
 
-     &-wrapper {
-      margin: 0 auto;
-     }
+      &-wrapper {
+        margin: 0 auto;
+      }
 
       &-title {
         text-align: center;
@@ -186,7 +185,6 @@
 
 @media (max-width: 480px) {
   .footer {
-
     &__wrapper-left {
       flex-direction: column;
       gap: 60px;
