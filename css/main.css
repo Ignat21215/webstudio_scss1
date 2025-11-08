@@ -337,6 +337,10 @@ ul {
   width: 16px;
   height: 12px;
 }
+.header__icon--phone {
+  width: 10px;
+  height: 16px;
+}
 .header__icon:nth-child(2) {
   width: 10px;
   height: 16px;
@@ -1316,18 +1320,12 @@ ul {
   line-height: 28px;
   letter-spacing: 0.03em;
 }
-.advertisements__item-container {
-  padding-left: 24px;
-  padding-right: 24px;
-}
 .advertisements__title {
   color: rgb(33, 33, 33);
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 36px;
-  padding-top: 20px;
-  padding-left: 24px;
   max-width: 306px;
 }
 .advertisements__subtitle {
@@ -1337,22 +1335,20 @@ ul {
   font-size: 16px;
   line-height: 30px;
   padding-top: 4px;
-  padding-left: 24px;
-  padding-bottom: 20px;
 }
-.advertisements-item__container {
+.advertisements__item-container {
   border: 1px solid;
   border-color: rgb(238, 238, 238);
   border-top: 0;
+  padding: 20px 24px;
 }
 
 @media (max-width: 768px) {
-  .advertisements__image {
-    max-width: 354px;
-    max-height: 294px;
-  }
   .advertisements-overlay__wrapper {
-    max-width: 354px;
+    width: 354px;
+  }
+  .advertisements__overlay {
+    padding: 49px 24px 77px 24px;
   }
 }
 @media (max-width: 480px) {
@@ -1360,12 +1356,11 @@ ul {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .advertisements__image {
-    width: 100%;
-    height: 100%;
-  }
   .advertisements-overlay__wrapper {
     width: 450px;
+  }
+  .advertisements-overlay {
+    padding: 77px 24px 77px 24px;
   }
 }
 #toggle,

@@ -100,6 +100,11 @@
     fill: $desc-color;
     width: 16px;
     height: 12px;
+
+    &--phone {
+      width: 10px;
+      height: 16px;
+    }
   }
 
   &__icon:nth-child(2) {
