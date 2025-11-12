@@ -248,14 +248,10 @@ ul {
 }
 .header__container {
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 315px;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -384,6 +380,11 @@ ul {
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .header__nav {
     display: none;
@@ -1326,7 +1327,7 @@ ul {
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 36px;
-  max-width: 306px;
+  max-width: 322px;
 }
 .advertisements__subtitle {
   color: rgb(117, 117, 117);
@@ -1360,7 +1361,7 @@ ul {
     width: 450px;
   }
   .advertisements-overlay {
-    padding: 77px 24px 77px 24px;
+    padding: 77px 24px;
   }
 }
 #toggle,

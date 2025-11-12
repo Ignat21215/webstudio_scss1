@@ -14,9 +14,10 @@
   }
 
   &__container {
-    display: flex;
+    display: -webkit-box; 
+    // Якщо просто поставити flex, то воно не працює
     align-items: center;
-    justify-content: space-between;
+    gap: 315px;
   }
 
   &__wrapper {
@@ -156,6 +157,10 @@
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &__container {
+      justify-content: space-between;
+    }
 
     &__nav {
       display: none;
