@@ -527,19 +527,19 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.modal__close-btn:hover .modal__close-icon {
+  fill: rgb(33, 150, 243);
+}
 .modal__close-icon {
   width: 18px;
   height: 18px;
   fill: rgb(0, 0, 0);
 }
-.modal__close-icon:hover {
-  fill: rgb(33, 150, 243);
-}
 .modal__title {
   font-size: 20px;
   padding-bottom: 12px;
   position: relative;
-  line-height: 30px;
+  line-height: 23px;
 }
 .modal__form {
   display: -webkit-box;
@@ -549,7 +549,7 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .modal__label {
   display: -webkit-box;
@@ -565,15 +565,13 @@ ul {
   text-align: left;
   font-size: 12px;
   letter-spacing: 0.01em;
-}
-.modal__label:hover .modal__icon {
-  fill: rgb(33, 150, 243);
+  line-height: 14px;
 }
 .modal__input {
   border: 1px solid;
   border-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  height: 40px;
+  padding-block: 11px;
   padding-left: 42px;
   padding-right: 10px;
 }
@@ -583,6 +581,9 @@ ul {
 .modal__input:focus {
   border-color: rgb(33, 150, 243);
   outline: none;
+}
+.modal__input:focus ~ .modal__icon, .modal__input:hover ~ .modal__icon {
+  fill: rgb(33, 150, 243);
 }
 .modal__icon {
   position: absolute;
@@ -642,27 +643,64 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 7px;
+  gap: 10px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .modal__checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 2px solid;
   border-color: rgb(33, 33, 33);
-  padding: 4px 2px 3px 3px;
+  height: 15px;
+  width: 16px;
+  background-color: none;
+  margin: 0;
+  margin-right: 7px;
+}
+.modal__checkbox:checked {
   background-color: rgb(33, 150, 243);
+  border: none;
+  border-radius: 2px;
+  position: relative;
+}
+.modal__checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 8px;
+  height: 5px;
+  border: solid white;
+  border-width: 2px 2px 0px 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 .modal__desc {
   font-size: 14px;
-  line-height: 23px;
+  line-height: 24px;
   color: rgb(117, 117, 117);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
 }
 .modal__link {
   color: rgb(33, 150, 243);
   text-decoration: underline;
+  margin-left: 5px;
 }
 .modal__btn {
   background-color: rgb(33, 150, 243);
@@ -1012,7 +1050,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 93px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer__address {
   padding-top: 20px;
@@ -1112,30 +1152,40 @@ ul {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03px;
+  font-weight: 400;
+  font-family: inherit;
 }
 .footer__form-input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03px;
+  font-weight: 400;
+  font-family: inherit;
 }
 .footer__form-input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03px;
+  font-weight: 400;
+  font-family: inherit;
 }
 .footer__form-input::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03px;
+  font-weight: 400;
+  font-family: inherit;
 }
 .footer__form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03px;
+  font-weight: 400;
+  font-family: inherit;
 }
 .footer__form-button {
   background-color: rgb(33, 150, 243);

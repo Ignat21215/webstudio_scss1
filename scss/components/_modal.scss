@@ -46,16 +46,16 @@
     padding: 6px;
     display: flex;
     justify-content: center;
+
+    &:hover .modal__close-icon {
+      fill: $main-color;
+    }
   }
 
   &__close-icon {
     width: 18px;
     height: 18px;
     fill: rgba(0, 0, 0, 1);
-
-    &:hover {
-      fill: $main-color;
-    }
   }
 
   &__title {
@@ -63,13 +63,13 @@
     font-size: 20px;
     padding-bottom: 12px;
     position: relative;
-    line-height: 30px;
+    line-height: 23px;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
 
   &__label {
@@ -81,17 +81,14 @@
     text-align: left;
     font-size: 12px;
     letter-spacing: 0.01em;
-
-    &:hover .modal__icon {
-      fill: $main-color;
-    }
+    line-height: 14px;
   }
 
   &__input {
     border: 1px solid;
     border-color: $burger-link-border;
     border-radius: 4px;
-    height: 40px;
+    padding-block: 11px;
     padding-left: 42px;
     padding-right: 10px;
 
@@ -102,6 +99,11 @@
     &:focus {
       border-color: $main-color;
       outline: none;
+    }
+
+    &:focus ~ .modal__icon,
+    &:hover ~ .modal__icon {
+      fill: $main-color;
     }
   }
 
@@ -142,28 +144,55 @@
 
   &__wrapper {
     display: flex;
-    gap: 7px;
+    gap: 10px;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    flex-direction: column;
   }
 
   &__checkbox {
+    appearance: none;
     border: 2px solid;
     border-color: $titles-color;
-    padding: 4px 2px 3px 3px;
-    background-color: $main-color;
+    height: 15px;
+    width: 16px;
+    background-color: none;
+    margin: 0;
+    margin-right: 7px;
+
+    &:checked {
+      background-color: $main-color;
+      border: none;
+      border-radius: 2px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        top: 2px;
+        width: 8px;
+        height: 5px;
+        border: solid white;
+        border-width: 2px 2px 0px 0;
+        transform: rotate(135deg);
+      }
+    }
   }
 
   &__desc {
     font-size: 14px;
-    line-height: 23px;
+    line-height: 24px;
     color: $desc-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
   }
 
   &__link {
     color: $main-color;
     text-decoration: underline;
+    margin-left: 5px;
   }
 
   &__btn {
