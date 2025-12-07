@@ -91,6 +91,10 @@
     padding-block: 11px;
     padding-left: 42px;
     padding-right: 10px;
+    color: rgba(117, 117, 117, 0.5);
+    letter-spacing: 0.01em;
+    font-size: 12px;
+    font-family: $font-family;
 
     &:hover {
       border-color: $main-color;
@@ -124,6 +128,10 @@
     width: 448px;
     height: 120px;
     resize: none;
+    color: rgba(117, 117, 117, 0.5);
+    letter-spacing: 0.01em;
+    font-size: 12px;
+    font-family: $font-family;
 
     &::placeholder {
       color: rgba(117, 117, 117, 0.5);

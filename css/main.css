@@ -574,6 +574,10 @@ ul {
   padding-block: 11px;
   padding-left: 42px;
   padding-right: 10px;
+  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.01em;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
 }
 .modal__input:hover {
   border-color: rgb(33, 150, 243);
@@ -601,6 +605,10 @@ ul {
   width: 448px;
   height: 120px;
   resize: none;
+  color: rgba(117, 117, 117, 0.5);
+  letter-spacing: 0.01em;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
 }
 .modal__textarea::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -1146,6 +1154,12 @@ ul {
   padding: 15px 16px;
   background-color: transparent;
   width: 358px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03px;
+  font-weight: 400;
+  font-family: inherit;
 }
 .footer__form-input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
