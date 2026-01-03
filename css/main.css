@@ -281,7 +281,7 @@ ul {
   color: rgb(33, 150, 243);
   position: relative;
 }
-.header__nav-link--current:hover::after {
+.header__nav-link--current::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -292,7 +292,7 @@ ul {
   height: 4px;
   left: 0;
 }
-.header__nav-link--portfolio-current:hover::after {
+.header__nav-link--portfolio-current::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -334,10 +334,6 @@ ul {
   height: 12px;
 }
 .header__icon--phone {
-  width: 10px;
-  height: 16px;
-}
-.header__icon:nth-child(2) {
   width: 10px;
   height: 16px;
 }
@@ -1366,8 +1362,8 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .advertisements__overlay {
@@ -1417,9 +1413,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-  .advertisements-overlay__wrapper {
-    width: 354px;
-  }
   .advertisements__overlay {
     padding: 49px 24px 77px 24px;
   }
@@ -1428,9 +1421,6 @@ ul {
   .advertisements__item {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-  }
-  .advertisements-overlay__wrapper {
-    width: 450px;
   }
   .advertisements-overlay {
     padding: 77px 24px;

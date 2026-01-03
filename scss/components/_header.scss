@@ -49,7 +49,7 @@
       position: relative;
     }
 
-    &-link--current:hover::after {
+    &-link--current::after {
       content: "";
       position: absolute;
       display: inline-block;
@@ -61,7 +61,7 @@
       left: 0;
     }
 
-    &-link--portfolio-current:hover::after {
+    &-link--portfolio-current::after {
       content: "";
       position: absolute;
       display: inline-block;
@@ -106,11 +106,6 @@
       width: 10px;
       height: 16px;
     }
-  }
-
-  &__icon:nth-child(2) {
-    width: 10px;
-    height: 16px;
   }
 
   &__sm-list {

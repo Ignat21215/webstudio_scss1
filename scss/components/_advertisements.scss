@@ -34,8 +34,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
 
@@ -85,9 +85,6 @@
 
 @media (max-width: 768px) {
   .advertisements {
-    &-overlay__wrapper {
-      width: 354px;
-    }
 
     &__overlay {
       padding: 49px 24px 77px 24px;
@@ -99,10 +96,6 @@
   .advertisements {
     &__item {
       flex-basis: 100%;
-    }
-
-    &-overlay__wrapper {
-      width: 450px;
     }
 
     &-overlay {
